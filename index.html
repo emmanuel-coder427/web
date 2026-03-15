@@ -146,7 +146,70 @@ font-size:20px;
 animation:fall 6s linear forwards;
 opacity:0.7;
 }
+/* MOBILE RESPONSIVENESS */
 
+@media (max-width: 768px) {
+
+header h1{
+font-size:42px;
+}
+
+header p{
+font-size:16px;
+max-width:90%;
+}
+
+section{
+padding:60px 8%;
+}
+
+h2{
+font-size:26px;
+}
+
+button{
+padding:12px 24px;
+font-size:15px;
+}
+
+.gallery{
+grid-template-columns:repeat(2,1fr);
+}
+
+.gallery img{
+max-height:220px;
+border-radius:18px;
+}
+
+.letter{
+padding:25px;
+}
+
+}
+
+@media (max-width:480px){
+
+header h1{
+font-size:34px;
+}
+
+header p{
+font-size:15px;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.gallery img{
+max-height:250px;
+}
+
+section{
+padding:50px 6%;
+}
+
+}
 @keyframes fall{
 to{
 transform:translateY(110vh);
